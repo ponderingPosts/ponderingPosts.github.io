@@ -1,10 +1,9 @@
 # Site Settings
-title: Static Hacker
-logo: sh.gif
+title: 울림을 가진 글들
 
 # Site Author
 author:
-    name: Mitchell Cash
+    name: Roeniss
     bio: "This is a cool Jekyll theme, check it out!"
     email: mitchell@mitchellcash.com
 
@@ -17,7 +16,6 @@ exclude:
     - .sass-cache
     - Gemfile
     - Gemfile.lock
-    - /docs # ignore Static Hacker /docs
 
 # Conversion
 markdown: kramdown

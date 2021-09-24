@@ -6,30 +6,18 @@ layout: default
         <table border="0">
             <tbody>
                 <tr>
-                    <td valign="top">user:</td>
+                    <td valign="top">소개:</td>
                     <td>
-                        <a href="{{ "/profile" | relative_url }}" class="hnuser">{{ site.author.name }}</a>
+                        울림이 있는 포스팅을 수집하는 사이트입니다. 누구나 새 글을 추가할 수 있습니다. (<a href="https://github.com/roeniss/roeniss.github.io/">추가방법</a>)
                     </td>
                 </tr>
                 <tr>
-                    <td valign="top">created:</td>
-                    <td>
-                        {% for post in site.posts limit:1 %}
-                            {% assign dateStart = post.date | date: "%s" %} <!-- Find date of earliest blog post -->
-                        {% endfor %}
-                        {% assign nowTimestamp = "now" | date: "%s" %} <!-- Get the current time -->
-                        {% assign diffSeconds = nowTimestamp | minus: dateStart %} <!-- Calculate the difference in seconds between earliest blog post and current time -->
-                        {% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 %} <!-- Calculate the difference in days between earliest blog post and current time -->
-                        {{ diffDays }} days ago
-                    </td>
+                    <td valign="top">규칙:</td>
+                    <td>한 블로그 당 한 개의 게시물만 등록할 수 있습니다. 더 좋은 게시물이 있다고 생각한다면 <a href="https://github.com/roeniss/roeniss.github.io/issues">토론</a>을 열어주세요.</td>
                 </tr>
                 <tr>
-                    <td valign="top">about:</td>
-                    <td>{{ site.author.bio }}</td>
-                </tr>
-                <tr>
-                    <td valign="top">email:</td>
-                    <td>{{ site.author.email }}</td>
+                    <td valign="top">운영자 연락처:</td>
+                    <td>roeniss2@gmail.com</td>
                 </tr>
             </tbody>
         </table>

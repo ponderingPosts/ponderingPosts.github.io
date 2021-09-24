@@ -1,8 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-{% if page.id == "profile" %}
-    <title>Profile: {{ site.author.name }} | {{ site.title }}</title>
-{% elsif page.id == "home" %}
+{% if page.id == "index" or page.id == "profile" %}
     <title>{{ site.title }}</title>
 {% else %}
     <title>{{ page.title }} | {{ site.title }}</title>
